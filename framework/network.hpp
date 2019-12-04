@@ -70,6 +70,9 @@ struct Layer{
 
 struct Network{
     
+    int inputs;
+    int outputs;
+    
     float * input;
     float * delta;
     
@@ -98,6 +101,7 @@ enum ACTIVATION{
     RELU
 };
 
+using idx_t = int64_t;
 
 
 } // namespace framework

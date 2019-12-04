@@ -13,6 +13,8 @@
 		84A5B87A23951F3800AFA585 /* softmax_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B87823951F3800AFA585 /* softmax_layer.cpp */; };
 		84A5B880239626AE00AFA585 /* connectedlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B87E239626AE00AFA585 /* connectedlayer.cpp */; };
 		84A5B8832397931C00AFA585 /* loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B8812397931C00AFA585 /* loader.cpp */; };
+		992913C62397E1A900DA2886 /* io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992913C42397E1A900DA2886 /* io.cpp */; };
+		992913CA2397EAB800DA2886 /* read.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 992913C82397EAB800DA2886 /* read.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,11 @@
 		84A5B8812397931C00AFA585 /* loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = loader.cpp; sourceTree = "<group>"; };
 		84A5B8822397931C00AFA585 /* loader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = loader.hpp; sourceTree = "<group>"; };
 		84A5B88423979AAF00AFA585 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
+		992913C42397E1A900DA2886 /* io.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = io.cpp; sourceTree = "<group>"; };
+		992913C52397E1A900DA2886 /* io.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = io.hpp; sourceTree = "<group>"; };
+		992913C72397E4BE00DA2886 /* FrameworkAssert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FrameworkAssert.h; sourceTree = "<group>"; };
+		992913C82397EAB800DA2886 /* read.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = read.cpp; sourceTree = "<group>"; };
+		992913C92397EAB800DA2886 /* read.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = read.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +85,11 @@
 				84A5B86B2394D40E00AFA585 /* main.cpp */,
 				84A5B8722394D49200AFA585 /* network.cpp */,
 				84A5B8732394D49200AFA585 /* network.hpp */,
+				992913C42397E1A900DA2886 /* io.cpp */,
+				992913C72397E4BE00DA2886 /* FrameworkAssert.h */,
+				992913C52397E1A900DA2886 /* io.hpp */,
+				992913C82397EAB800DA2886 /* read.cpp */,
+				992913C92397EAB800DA2886 /* read.hpp */,
 				84A5B8812397931C00AFA585 /* loader.cpp */,
 				84A5B8822397931C00AFA585 /* loader.hpp */,
 				84A5B87E239626AE00AFA585 /* connectedlayer.cpp */,
@@ -151,6 +163,8 @@
 				84A5B8742394D49200AFA585 /* network.cpp in Sources */,
 				84A5B86C2394D40E00AFA585 /* main.cpp in Sources */,
 				84A5B8832397931C00AFA585 /* loader.cpp in Sources */,
+				992913CA2397EAB800DA2886 /* read.cpp in Sources */,
+				992913C62397E1A900DA2886 /* io.cpp in Sources */,
 				84A5B8772394FCB100AFA585 /* gemm.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
