@@ -7,6 +7,8 @@
 //
 
 #include "gemm.hpp"
+#include <cmath>
+#include <cfloat>
 
 
 namespace framework {
@@ -134,6 +136,44 @@ void fill_cpu(int N, float ALPHA, float *X, int INCX)
 }
 
 
+void softmax_x_ent_cpu(int n, float *pred, float *truth, float *delta, float *error)
+{
+    int i;
+    for(i = 0; i < n; ++i){
+        float t = truth[i];
+        float p = pred[i];
+        error[i] = (t) ? -log(p) : 0;
+        delta[i] = t-p;
+    }
+}
+
+
+void softmax(float *input, int n, float temp, float *output)
+{
+    int i;
+    float sum = 0;
+    float largest = -FLT_MAX;
+    for(i = 0; i < n; ++i){
+        if(input[i] > largest) largest = input[i];
+    }
+    for(i = 0; i < n; ++i){
+        float e = exp(input[i]/temp - largest/temp);
+        sum += e;
+        output[i] = e;
+    }
+    for(i = 0; i < n; ++i){
+        output[i] /= sum;
+    }
+}
+
+
+void softmax_cpu(float *input, int n, int batch_size, float temp, float *output)
+{
+    int b;
+    for(b = 0; b < batch_size; b++){
+        softmax(input + b*batch_size, n, temp, output + b*batch_size);
+    }
+}
 
 
 } // namespace framework

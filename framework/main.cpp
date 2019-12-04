@@ -7,13 +7,17 @@
 //
 
 #include <iostream>
-#include "network.hpp"
+#include "connectedlayer.hpp"
+#include "loader.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
-    using namespace framework;
-    ConnectedLayer layer(1,3,4,RELU);
-    layer.init();
+    
+    std::string filename("test");
+    framework::read_cfg(filename);
+    
+    
+    
     return 0;
 }

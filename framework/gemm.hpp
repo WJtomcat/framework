@@ -30,7 +30,9 @@ void scal_cpu(int N, float ALPHA, float *X, int INCX);
 
 void fill_cpu(int N, float ALPHA, float *X, int INCX);
 
+void softmax_x_ent_cpu(int n, float *pred, float *truth, float *delta, float *error);
 
+void softmax_cpu(float *input, int n, int batch_size, float temp, float *output);
 } // namespace framework
 
 #endif /* gemm_hpp */

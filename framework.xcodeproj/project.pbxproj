@@ -10,6 +10,9 @@
 		84A5B86C2394D40E00AFA585 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B86B2394D40E00AFA585 /* main.cpp */; };
 		84A5B8742394D49200AFA585 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B8722394D49200AFA585 /* network.cpp */; };
 		84A5B8772394FCB100AFA585 /* gemm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B8752394FCB100AFA585 /* gemm.cpp */; };
+		84A5B87A23951F3800AFA585 /* softmax_layer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B87823951F3800AFA585 /* softmax_layer.cpp */; };
+		84A5B880239626AE00AFA585 /* connectedlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B87E239626AE00AFA585 /* connectedlayer.cpp */; };
+		84A5B8832397931C00AFA585 /* loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B8812397931C00AFA585 /* loader.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,13 @@
 		84A5B8732394D49200AFA585 /* network.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = network.hpp; sourceTree = "<group>"; };
 		84A5B8752394FCB100AFA585 /* gemm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gemm.cpp; sourceTree = "<group>"; };
 		84A5B8762394FCB100AFA585 /* gemm.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gemm.hpp; sourceTree = "<group>"; };
+		84A5B87823951F3800AFA585 /* softmax_layer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = softmax_layer.cpp; sourceTree = "<group>"; };
+		84A5B87923951F3800AFA585 /* softmax_layer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = softmax_layer.hpp; sourceTree = "<group>"; };
+		84A5B87E239626AE00AFA585 /* connectedlayer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = connectedlayer.cpp; sourceTree = "<group>"; };
+		84A5B87F239626AE00AFA585 /* connectedlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = connectedlayer.hpp; sourceTree = "<group>"; };
+		84A5B8812397931C00AFA585 /* loader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = loader.cpp; sourceTree = "<group>"; };
+		84A5B8822397931C00AFA585 /* loader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = loader.hpp; sourceTree = "<group>"; };
+		84A5B88423979AAF00AFA585 /* test */ = {isa = PBXFileReference; lastKnownFileType = text; path = test; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +73,18 @@
 		84A5B86A2394D40E00AFA585 /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				84A5B86B2394D40E00AFA585 /* main.cpp */,
-				84A5B8722394D49200AFA585 /* network.cpp */,
 				84A5B8752394FCB100AFA585 /* gemm.cpp */,
 				84A5B8762394FCB100AFA585 /* gemm.hpp */,
+				84A5B86B2394D40E00AFA585 /* main.cpp */,
+				84A5B8722394D49200AFA585 /* network.cpp */,
 				84A5B8732394D49200AFA585 /* network.hpp */,
+				84A5B8812397931C00AFA585 /* loader.cpp */,
+				84A5B8822397931C00AFA585 /* loader.hpp */,
+				84A5B87E239626AE00AFA585 /* connectedlayer.cpp */,
+				84A5B87F239626AE00AFA585 /* connectedlayer.hpp */,
+				84A5B87823951F3800AFA585 /* softmax_layer.cpp */,
+				84A5B87923951F3800AFA585 /* softmax_layer.hpp */,
+				84A5B88423979AAF00AFA585 /* test */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -129,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A5B87A23951F3800AFA585 /* softmax_layer.cpp in Sources */,
+				84A5B880239626AE00AFA585 /* connectedlayer.cpp in Sources */,
 				84A5B8742394D49200AFA585 /* network.cpp in Sources */,
 				84A5B86C2394D40E00AFA585 /* main.cpp in Sources */,
+				84A5B8832397931C00AFA585 /* loader.cpp in Sources */,
 				84A5B8772394FCB100AFA585 /* gemm.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
